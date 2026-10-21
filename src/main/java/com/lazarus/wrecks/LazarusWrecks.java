@@ -49,6 +49,7 @@ public final class LazarusWrecks {
     public LazarusWrecks() {
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CONFIG);
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(MechanicSkills.class);
         LOGGER.info("Lazarus Wrecks initialized");
     }
 
